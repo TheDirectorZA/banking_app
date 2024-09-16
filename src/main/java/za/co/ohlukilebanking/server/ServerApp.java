@@ -9,9 +9,9 @@ public class ServerApp {
 
         AccountController accountController = new AccountController();
 
-        app.get("/api/accounts/:id/balance", accountController::getBalance);
-        app.post("/api/accounts/:id/deposit", accountController::deposit);
-        app.post("/api/accounts/:id/withdraw", accountController::withdraw);
+        app.get("/api/accounts/{id}/balance", accountController::getBalance);
+        app.post("/api/accounts/{id}/deposit", accountController::deposit);
+        app.post("/api/accounts/{id}/withdraw", accountController::withdraw);
 
         System.out.println("Server running on http://localhost:7000");
     }

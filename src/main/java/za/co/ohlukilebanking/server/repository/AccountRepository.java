@@ -1,6 +1,6 @@
 package za.co.ohlukilebanking.server.repository;
 
-import server.model.Account;
+import za.co.ohlukilebanking.server.model.Account;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
