@@ -36,7 +36,13 @@
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
-    </dependency>  </dependencies>
+    </dependency>
+    <dependency>
+      <groupId>io.javalin</groupId>
+      <artifactId>javalin-bundle</artifactId>
+      <version>6.2.0</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <plugins>
@@ -58,7 +64,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>za.co.ohlukilebanking.banking_app/za.co.ohlukilebanking.banking_app.HelloApplication</mainClass>
+              <mainClass>za.co.ohlukilebanking.banking_app/za.co.ohlukilebanking.HelloApplication</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
